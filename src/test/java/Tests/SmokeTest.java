@@ -1,8 +1,9 @@
 package Tests;
-
+import Listeners.TestListener;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(TestListener.class)
 public class SmokeTest {
 
     @Test
