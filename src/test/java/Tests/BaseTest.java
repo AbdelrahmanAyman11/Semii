@@ -1,22 +1,15 @@
 package Tests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.*;
 import utils.DriverManager;
-import utils.ExtentManager;
 
-import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Method;
-import java.time.Duration;
 
 public class BaseTest {
 
@@ -27,7 +20,6 @@ public class BaseTest {
         public WebDriver getDriver() {
             return driver;
         }
-
 
         @BeforeMethod
         public void setup(Method method) {
