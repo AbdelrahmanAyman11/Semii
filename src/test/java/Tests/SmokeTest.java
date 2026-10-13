@@ -15,4 +15,10 @@ public class SmokeTest {
         System.out.println("TestNG is running successfully222222222222!");
         Assert.assertTrue(true);
     }
+    @Test
+    public void verifyTestNGExecution33() {
+        System.out.println("TestNG is running successfully33333333333!");
+        Assert.assertTrue(true);
+    }
+
 }
