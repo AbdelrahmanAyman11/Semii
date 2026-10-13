@@ -14,8 +14,6 @@ import java.lang.reflect.Method;
 public class BaseTest {
 
         protected WebDriver driver;
-        protected static ExtentReports extent;
-        protected ExtentTest test;
 
         public WebDriver getDriver() {
             return driver;
